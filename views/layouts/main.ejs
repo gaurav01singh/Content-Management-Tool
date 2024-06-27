@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= locals.title %></title>
+    <meta name="description" content=" <%= locals.description %>" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+  </head>
+  <body>
+    <%- include('../partials/search.ejs') %>
+    <div class="container">
+      <%- include('../partials/header.ejs') %>
+      <main class="main"><%- body %></main>
+      <%-include('../partials/footer.ejs') %>
+    </div>
+    <script type="text/javascript" defer src="/js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  </body>
+</html>
